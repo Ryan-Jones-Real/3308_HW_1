@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <html lang="en">
+      <head>
+        <title>Page Title</title>
+          <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+          <h1>Create New Article</h1>
+          <form>
+              <div class="form-group">
+                <label for="inputTitle">Article Title</label>
+                 <input type="Title" class="form-control" id="inputTitle" aria-describedby="putTitle" placeholder="Enter Title">
+             </div>
+            <div class="form-group">
+                <label for="inputAuthor">Author Name</label>
+                 <input type="Author" class="form-control" id="inputAuthor" placeholder="Enter Author">
+             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="container mt-3">
+                        <p>Default file:</p>
+                        <input type="file" id="myFile" name="filename2">
+  
+                            <div class="mt-3">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="dropdown"><br><br>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                On which page should Article Appear?
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Smart Page</a>
+                                <a class="dropdown-item" href="#">Dumb Page</a>
+                                <a class="dropdown-item" href="#">*secret page*</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputBody">Put Article Here</label><br>
+            
+                <!-- <input type="Body" class="form-control" id="inputBody" aria-describedby="putBody" placeholder="Enter Body" size="40">-->
+                  <textarea cols="120" rows="20"></textarea> 
+             </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm">
+                        <p>Select Tags</p>
+                        
+                        <label class="checkbox-inline"><input type="checkbox" value="">Python</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">C++</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Scala</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Java</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="">Perl</label>
+                      </div>
+                      <div class="col-sm">
+                      </div>
+                      <div class="col-sm">
+                          Public or Private?<br><br>
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                                <input type="radio" name="options" id="Public" autocomplete="off" checked> Public
+                            </label>
+
+                            <label class="btn btn-secondary">
+                                <input type="radio" name="options" id="Private" autocomplete="off"> Private
+                            </label>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="container">
+                <h1>Log-in to Finish Submission</h1>
+              </div>  
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm">
+                          <input type="username" class="form-control" id="username" aria-describedby="username" placeholder="username">
+                      </div>
+                      <div class="col-sm">
+                          <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="password">
+                      </div>
+                  </div>
+                  <br>
+                  <label class="checkbox-inline"><input type="checkbox" value="">Remember Me</label>
+                  <br>
+                  <button type="submit" class="btn btn-info" data-toggle="submit" data-target="submit">Submit</button>
+              </div><br><br>
+          </form>
+      </body>
+    </html>
